@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* ── Design theme── */
+@theme {
+  --color-bg: #060c14;
+  --color-bg2: #0a1220;
+  --color-bg3: #0f1a2e;
+  --color-accent: #3b82f6;
+  --color-accent-hi: #60a5fa;
+  --color-cyan: #38bdf8;
+  --color-text: #eef4ff;
+  --color-text2: #8ba4cc;
+  --color-text3: #3a526b;
+  --color-green: #22d37a;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-space: 'Space Mono', monospace;
+  --font-dm: 'DM Sans', sans-serif;
+  --radius-card: 16px;
+}
+
