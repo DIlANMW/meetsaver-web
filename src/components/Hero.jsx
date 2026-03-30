@@ -1,0 +1,127 @@
+import React from 'react'
+import { LOGO, CHROME_ICON, MEET_ICON } from '../assets.js'
+
+export default function Hero() {
+  return (
+    <section className="hero-wrap">
+      <div className="hero-inner">
+
+        {/* ── Left  */}
+        <div>
+
+          <h1 className="hero-h1">
+            Your Meet chats.<br />Saved.<br />
+            <span className="hi">Automatically.</span>
+          </h1>
+
+          <p className="hero-p">
+            MeetSaver captures every message, link, and action item from your
+            Google Meet <b>in real time.</b> Organised into tabs. Stored
+            locally. <b>Seemless.</b>
+          </p>
+
+          <div className="hero-btns">
+            <a className="btn-main" href="#">
+              <img src={CHROME_ICON} alt="" />
+              Add to Chrome — It's Free
+            </a>
+            <a className="btn-out" href="#how">How it works →</a>
+          </div>
+
+          <div className="hero-trust">
+            <div className="htrust">
+              <span className="htrust-stars">★★★★★</span>
+              <span>5.0 rating</span>
+            </div>
+            <span className="hdiv">·</span>
+            <div className="htrust">🔒 100% local</div>
+            <span className="hdiv">·</span>
+            <div className="htrust">⚡ Zero setup</div>
+          </div>
+        </div>
+
+        {/* ── Right popup ── */}
+        <div className="hero-popup-col">
+          <div className="popup-glow" />
+          <div className="popup-wrap">
+            <div className="popup">
+
+              <div className="p-header">
+                <div className="logo">
+                  <img src={LOGO} alt="MeetSaver" style={{ mixBlendMode: 'screen' }} />
+                  <span className="logo-text">MeetSaver</span>
+                </div>
+              </div>
+
+              <div style={{ padding: '15px 20px 0' }}>
+                <div className="section-label">LIVE NOW</div>
+                <div className="current-card">
+                  <div className="current-card-inner">
+                    <span className="live-dot" />
+                    <div>
+                      <div className="current-name">Q2 Product Sync</div>
+                      <div className="current-meta">Started 14 minutes ago</div>
+                    </div>
+                  </div>
+                  <div className="current-actions">
+                    <div className="stat-pill">
+                      <span className="stat-num">24</span>
+                      <span className="stat-label">msgs</span>
+                    </div>
+                    <button className="btn-ghost">Rename</button>
+                    <button className="btn-primary">Save Meeting</button>
+                  </div>
+                  <div className="stats-row">
+                    <div className="stats-pill">
+                      <span className="stats-pill-num">12</span>
+                      <span className="stats-pill-label">meetings saved</span>
+                    </div>
+                    <div className="stats-pill">
+                      <span className="stats-pill-num">347</span>
+                      <span className="stats-pill-label">msgs captured</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div style={{ padding: '17px 20px 17px' }}>
+                <div className="section-header">
+                  <div className="section-label">SAVED MEETINGS</div>
+                </div>
+                <div className="date-group-label">TODAY</div>
+
+                <div className="meeting-card">
+                  <img className="meet-icon-img" src={MEET_ICON} alt="Meet" />
+                  <div className="meeting-card-left">
+                    <div className="meeting-card-name">Design Review</div>
+                    <div className="meeting-card-sub">
+                      Mar 16 · <span className="msg-badge">18 msgs</span>
+                    </div>
+                  </div>
+                  <div className="meeting-card-right">
+                    <span className="open-btn">OPEN</span>
+                  </div>
+                </div>
+
+                <div className="meeting-card">
+                  <img className="meet-icon-img" src={MEET_ICON} alt="Meet" />
+                  <div className="meeting-card-left">
+                    <div className="meeting-card-name">Sprint Planning</div>
+                    <div className="meeting-card-sub">
+                      Mar 16 · <span className="msg-badge">42 msgs</span>
+                    </div>
+                  </div>
+                  <div className="meeting-card-right">
+                    <span className="open-btn">OPEN</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  )
+}
