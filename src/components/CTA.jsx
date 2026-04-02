@@ -1,0 +1,34 @@
+import React from 'react'
+import { CHROME_ICON } from '../assets.js'
+import { useScrollAnimation } from '../hooks/useScrollAnimation.js'
+
+export default function CTA() {
+  const h2Ref   = useScrollAnimation('sa-up', 0)
+  const pRef    = useScrollAnimation('sa-up', 0.18)
+  const btnsRef = useScrollAnimation('sa-up', 0.30)
+
+  return (
+    <section className="cta-sec" id="cta">
+      <div className="wrap">
+        <h2 className="cta-h2" ref={h2Ref}>
+          Stop losing your<br />
+          <span className="hi">Meet chats.</span>
+        </h2>
+
+        <p className="cta-p" ref={pRef}>
+          Free forever. 10-second install. Works instantly with every Google Meet.
+        </p>
+
+        <div className="cta-btns" ref={btnsRef}>
+          <a className="btn-main" href="#">
+            <img src={CHROME_ICON} alt="" style={{ width: 20, height: 20, borderRadius: 5, objectFit: 'cover' }} />
+            Add to Chrome — It's Free
+          </a>
+          <a className="btn-out" href="#how">See how it works</a>
+        </div>
+
+        <div className="cta-note">⭐ 5.0 rating · No account needed · 100% local &amp; private</div>
+      </div>
+    </section>
+  )
+}
