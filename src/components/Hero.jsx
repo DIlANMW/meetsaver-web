@@ -10,35 +10,39 @@ export default function Hero() {
         <div>
 
           <h1 className="hero-h1">
-            Your Meet chats.<br />Saved.<br />
+            Save <br />Google Meet Chats<br />
             <span className="hi">Automatically.</span>
           </h1>
 
           <p className="hero-p">
-            MeetSaver captures every message, link, and action item from your
-            Google Meet <b>in real time.</b> Organised into tabs. Stored
-            locally. <b>Seemless.</b>
+            MeetSaver <b>automatically saves</b> Google Meet chat messages
+            <b> in real time.</b> and lets you export them anytime.
+            Keep your meeting chat history safely,
+            even after the meeting ends.
           </p>
 
           <div className="hero-btns">
-            <a className="btn-main" href="#">
+            <a className="btn-main" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" target="_blank" rel="noopener noreferrer">
               <img src={CHROME_ICON} alt="" />
-              Add to Chrome — It's Free
+              Add to Chrome - It's Free
             </a>
             <a className="btn-out" href="#how">How it works →</a>
           </div>
 
           <div className="hero-trust">
             <div className="htrust">
-              <span className="htrust-stars">★★★★★</span>
-              <span>5.0 rating</span>
+              <span>✨ Privacy First</span>
             </div>
             <span className="hdiv">·</span>
             <div className="htrust">🔒 100% local</div>
             <span className="hdiv">·</span>
             <div className="htrust">⚡ Zero setup</div>
           </div>
+          <p className="hero-seo-hidden">
+            Looking for a way to save Google Meet chat history? MeetSaver automatically captures and stores all messages during your meetings.
+          </p>
         </div>
+
 
         {/* ── Right popup ── */}
         <div className="hero-popup-col">
