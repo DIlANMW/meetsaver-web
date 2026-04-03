@@ -16,9 +16,9 @@ export default function Navbar() {
         <a href="#faq">FAQ</a>
       </div>
 
-      <a className="nav-cta" href="#">
+      <a className="nav-cta" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" target="_blank" rel="noopener noreferrer">
         <img src={CHROME_ICON} alt="" />
-        Add to Chrome — Free
+        Add to Chrome - Free
       </a>
     </nav>
   )
