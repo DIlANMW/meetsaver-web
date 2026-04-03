@@ -3,12 +3,12 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation.js'
 
 const FAQS = [
   {
-    q: 'Does MeetSaver work with Zoom or Teams?',
-    a: 'MeetSaver is built exclusively for Google Meet. It does not work with Zoom, Microsoft Teams, or any other platform.',
+    q: 'What is MeetSaver?',
+    a: "MeetSaver is a Chrome extension that automatically saves Google Meet chat messages. If you've ever lost important messages after a meeting ends, MeetSaver ensures you can download and store your chat history safely.",
   },
   {
-    q: 'Is my meeting data sent to the cloud?',
-    a: "Never. All data is stored locally using Chrome's storage API. Nothing is transmitted to any server.",
+    q: 'Who Needs MeetSaver?',
+    a: "MeetSaver is ideal for anyone who uses Google Meet regularly and wants to ensure they don't lose important chat messages after a meeting ends.",
   },
   {
     q: 'Do I need to click anything during the meeting?',
@@ -19,8 +19,8 @@ const FAQS = [
     a: 'Yes. From any saved meeting, click Export to download the full transcript as a .txt file.',
   },
   {
-    q: 'Is MeetSaver really free?',
-    a: 'Yes — completely free, forever. No premium tier, no trial, no credit card.',
+    q: 'Does Google Meet save chat messages automatically?',
+    a: 'Google Meet may save chat messages to Google Chat for some Google Workspace (business) users. However, this feature is limited, not available to all users, and meeting participants often cannot access chats after the meeting ends. MeetSaver ensures all chat messages are captured and stored locally for anyone using Google Meet.',
   },
 ]
 
@@ -41,8 +41,8 @@ function FaqItem({ faq, defaultOpen = false, delay }) {
 
 export default function FAQ() {
   const tagRef = useScrollAnimation('sa-up', 0)
-  const h2Ref  = useScrollAnimation('sa-up', 0.08)
-  const pRef   = useScrollAnimation('sa-up', 0.16)
+  const h2Ref = useScrollAnimation('sa-up', 0.08)
+  const pRef = useScrollAnimation('sa-up', 0.16)
 
   return (
     <section className="section sec-faq" id="faq">
