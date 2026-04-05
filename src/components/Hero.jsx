@@ -24,7 +24,7 @@ export default function Hero() {
 
           <div className="hero-btns">
             <a className="btn-main" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" target="_blank" rel="noopener noreferrer">
-              <img src={CHROME_ICON} alt="" />
+              <img src={CHROME_ICON} alt="Download MeetSaver Chrome extension" />
               Add to Chrome - It's Free
             </a>
             <a className="btn-out" href="#how">How it works →</a>
