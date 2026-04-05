@@ -253,6 +253,15 @@ nav:hover {
   object-fit: cover;
 }
 
+/* ── Popup section padding ── */
+.popup-section-top {
+  padding: 15px 20px 0;
+}
+
+.popup-section-bottom {
+  padding: 17px 20px 17px;
+}
+
 /* ── Layout wrapper ── */
 .wrap {
   position: relative;
@@ -1578,7 +1587,7 @@ nav:hover {
 
 /* ── Footer ── */
 .footer {
-  background: #0f172a;
+  background: #05080f;
   color: #cbd5f5;
   padding: 60px 20px 30px;
 }
@@ -2196,7 +2205,7 @@ body {
     flex-wrap: wrap;
   }
 
-  /* ─ POPUP — constrain to viewport ─ */
+  /* ─ POPUP — constrain to viewport, reduce height ─ */
   .hero-popup-col {
     display: flex;
     justify-content: center;
@@ -2211,6 +2220,118 @@ body {
     width: 100% !important;
     max-width: 100% !important;
     border-radius: 14px;
+  }
+
+  /* Tighten popup inner padding on mobile */
+  .p-header {
+    height: 46px;
+    padding: 0 14px;
+  }
+
+  .popup>div[style] {
+    padding-top: 10px !important;
+  }
+
+  .current-card {
+    padding: 12px 14px;
+    margin-bottom: 6px;
+  }
+
+  .current-card-inner {
+    margin-bottom: 8px;
+  }
+
+  .current-name {
+    font-size: 15px;
+  }
+
+  .stat-pill {
+    padding: 4px 9px;
+  }
+
+  .stats-row {
+    margin-top: 8px;
+    padding-top: 8px;
+    gap: 6px;
+  }
+
+  .stats-pill {
+    padding: 5px 8px;
+  }
+
+  .stats-pill-num {
+    font-size: 17px;
+  }
+
+  .section-header {
+    margin-bottom: 6px;
+  }
+
+  .date-group-label {
+    padding: 6px 0 4px;
+  }
+
+  .meeting-card {
+    padding: 11px 13px;
+    margin-bottom: 6px;
+  }
+
+  .meet-icon-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 9px;
+  }
+
+  .meeting-card-name {
+    font-size: 13px;
+  }
+
+  #meetings-list {
+    padding-bottom: 12px;
+  }
+
+  /* Popup section padding — override inline styles */
+  .popup-section-top {
+    padding: 10px 14px 0;
+  }
+
+  .popup-section-bottom {
+    padding: 10px 14px 10px;
+  }
+
+  /* Reduce popup internal spacing on mobile */
+  .p-header {
+    height: 48px;
+    padding: 0 16px;
+  }
+
+  .current-card {
+    padding: 14px;
+    margin-bottom: 6px;
+  }
+
+  .stats-row {
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+
+  #meetings-list {
+    padding: 0 0 10px;
+  }
+
+  .meeting-card {
+    padding: 10px 14px;
+    margin-bottom: 6px;
+  }
+
+  .date-group-label {
+    padding: 6px 0 4px;
+  }
+
+  /* Tighten the padding areas around popup sections */
+  .popup>div[style] {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   /* ─ LAYOUT ─ */
