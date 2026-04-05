@@ -1,6 +1,6 @@
 import React from 'react'
 import { CHROME_ICON } from '../assets.js'
-import { useScrollAnimation } from '../hooks/useScrollAnimation.js'
+import { useScrollAnimation } from '../hooks/useScrollAnimation.jsx'
 
 const STEPS = [
   {
@@ -41,9 +41,9 @@ function AnimStep({ step, delay }) {
 }
 
 export default function HowItWorks() {
-  const tagRef  = useScrollAnimation('sa-up', 0)
-  const h2Ref   = useScrollAnimation('sa-up', 0.08)
-  const pRef    = useScrollAnimation('sa-up', 0.16)
+  const tagRef = useScrollAnimation('sa-up', 0)
+  const h2Ref = useScrollAnimation('sa-up', 0.08)
+  const pRef = useScrollAnimation('sa-up', 0.16)
 
   return (
     <section className="section sec-how" id="how">

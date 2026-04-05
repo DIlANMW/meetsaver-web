@@ -1,5 +1,5 @@
 import React from 'react'
-import { useScrollAnimation } from '../hooks/useScrollAnimation.js'
+import { useScrollAnimation } from '../hooks/useScrollAnimation.jsx'
 
 const FEATURES = [
   {
@@ -45,8 +45,8 @@ function FeatureCard({ feature, delay }) {
 
 export default function Features() {
   const tagRef = useScrollAnimation('sa-up', 0)
-  const h2Ref  = useScrollAnimation('sa-up', 0.08)
-  const pRef   = useScrollAnimation('sa-up', 0.16)
+  const h2Ref = useScrollAnimation('sa-up', 0.08)
+  const pRef = useScrollAnimation('sa-up', 0.16)
 
   return (
     <section className="section sec-features" id="features">

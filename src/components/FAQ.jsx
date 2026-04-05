@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useScrollAnimation } from '../hooks/useScrollAnimation.js'
+import { useScrollAnimation } from '../hooks/useScrollAnimation.jsx'
 
 const FAQS = [
   {

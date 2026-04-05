@@ -1,6 +1,6 @@
 import React from 'react'
 import { CHROME_ICON } from '../assets.js'
-import { useScrollAnimation } from '../hooks/useScrollAnimation.js'
+import { useScrollAnimation } from '../hooks/useScrollAnimation.jsx'
 
 export default function CTA() {
   const h2Ref = useScrollAnimation('sa-up', 0)

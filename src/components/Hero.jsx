@@ -1,5 +1,6 @@
 import React from 'react'
 import { LOGO, CHROME_ICON, MEET_ICON } from '../assets.js'
+import CountUp from '../hooks/useScrollAnimation.jsx'
 
 export default function Hero() {
   return (
@@ -69,7 +70,7 @@ export default function Hero() {
                   </div>
                   <div className="current-actions">
                     <div className="stat-pill">
-                      <span className="stat-num">24</span>
+                      <span className="stat-num"><CountUp end={24} duration={1000} /></span>
                       <span className="stat-label">msgs</span>
                     </div>
                     <button className="btn-ghost">Rename</button>
@@ -77,11 +78,11 @@ export default function Hero() {
                   </div>
                   <div className="stats-row">
                     <div className="stats-pill">
-                      <span className="stats-pill-num">12</span>
+                      <span className="stats-pill-num"><CountUp end={12} duration={1000} /></span>
                       <span className="stats-pill-label">meetings saved</span>
                     </div>
                     <div className="stats-pill">
-                      <span className="stats-pill-num">347</span>
+                      <span className="stats-pill-num"><CountUp end={347} duration={1000} /></span>
                       <span className="stats-pill-label">msgs captured</span>
                     </div>
                   </div>

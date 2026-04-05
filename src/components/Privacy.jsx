@@ -1,5 +1,5 @@
 import React from 'react'
-import { useScrollAnimation, useCountUp } from '../hooks/useScrollAnimation.js'
+import { useScrollAnimation, useCountUp } from '../hooks/useScrollAnimation.jsx'
 
 const PILLS = [
   {
@@ -33,7 +33,7 @@ function PrivacyPill({ pill, delay }) {
 }
 
 function StatBox() {
-  const boxRef    = useScrollAnimation('sa-right', 0)
+  const boxRef = useScrollAnimation('sa-right', 0)
   const count1Ref = useCountUp(0, '', 800)
   const count2Ref = useCountUp(0, '', 800)
   const count3Ref = useCountUp(100, '%', 1200)
@@ -58,8 +58,8 @@ function StatBox() {
 
 export default function Privacy() {
   const tagRef = useScrollAnimation('sa-up', 0)
-  const h2Ref  = useScrollAnimation('sa-up', 0.08)
-  const pRef   = useScrollAnimation('sa-up', 0.16)
+  const h2Ref = useScrollAnimation('sa-up', 0.08)
+  const pRef = useScrollAnimation('sa-up', 0.16)
 
   return (
     <section className="section sec-privacy" id="privacy">
