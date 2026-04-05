@@ -72,7 +72,7 @@ export default function Privacy() {
                 Your data stays<br />on your device.
               </h2>
               <p className="sec-p" ref={pRef}>
-                No cloud. No account. No servers. Everything stored locally in your browser — only you can access it.
+                No cloud. No account. No servers. Everything stored locally in your browser - only you can access it.
               </p>
             </div>
             <div className="priv-pills">

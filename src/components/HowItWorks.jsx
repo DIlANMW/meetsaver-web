@@ -19,7 +19,7 @@ const STEPS = [
     n: 'STEP 03',
     ico: '✅',
     title: 'Everything saved',
-    desc: 'After the meeting, find every message, link and action item — organised, searchable, exportable.',
+    desc: 'After the meeting, find every message, link and action item - organised, searchable, exportable.',
   },
 ]
 
@@ -54,7 +54,7 @@ export default function HowItWorks() {
             Three steps.<br />Completely automatic.
           </h2>
           <p className="sec-p" ref={pRef}>
-            No setup, no manual saving — join your meeting and MeetSaver handles everything.
+            No setup, no manual saving - join your meeting and MeetSaver handles everything.
           </p>
         </div>
 

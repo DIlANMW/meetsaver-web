@@ -5,13 +5,13 @@ const FEATURES = [
   {
     wide: true,
     ico: '⚡',
-    title: "Real-time capture — the moment it's sent",
-    desc: "MeetSaver watches the Google Meet chat in real time. The second someone sends a message, it's captured silently — no delay, no missed messages, no manual saving. You stay completely focused on the meeting.",
+    title: "Real-time capture - the moment it's sent",
+    desc: "MeetSaver watches the Google Meet chat in real time. The second someone sends a message, it's captured silently - no delay, no missed messages, no manual saving. You stay completely focused on the meeting.",
   },
   {
     ico: '💬',
     title: 'Full message history',
-    desc: 'Every message with sender names and timestamps — the complete chat, nothing missing.',
+    desc: 'Every message with sender names and timestamps - the complete chat, nothing missing.',
   },
   {
     ico: '🔗',
@@ -26,7 +26,7 @@ const FEATURES = [
   {
     ico: '📤',
     title: 'Export anytime',
-    desc: 'Download your full meeting transcript as a .txt file — share with your team or keep for records.',
+    desc: 'Download your full meeting transcript as a .txt file - share with your team or keep for records.',
   },
 ]
 
