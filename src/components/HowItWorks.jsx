@@ -1,5 +1,5 @@
 import React from 'react'
-import { CHROME_ICON } from '../assets.js'
+import { CHROME_ICON, MEET_ICON } from '../assets.js'
 import { useScrollAnimation } from '../hooks/useScrollAnimation.jsx'
 
 const STEPS = [
@@ -30,7 +30,7 @@ function AnimStep({ step, delay }) {
       <div className="step-n">{step.n}</div>
       <span className="step-ico">
         {step.icoImg
-          ? <img src={CHROME_ICON} alt="Google Meet" style={{ width: 34, height: 34, borderRadius: 8, verticalAlign: 'middle' }} />
+          ? <img src={MEET_ICON} alt="Google Meet" style={{ width: 34, height: 34, borderRadius: 8, verticalAlign: 'middle' }} />
           : step.ico
         }
       </span>
