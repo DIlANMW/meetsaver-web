@@ -4,10 +4,17 @@ import { LOGO, CHROME_ICON } from '../assets.js'
 export default function Navbar() {
   return (
     <nav>
-      <a className="nav-logo" href="#">
-        <img src={LOGO} alt="MeetSaver" style={{ mixBlendMode: 'screen' }} />
-        <span className="nav-brand">MeetSaver</span>
-      </a>
+      <div className="nav-row1">
+        <a className="nav-logo" href="#">
+          <img src={LOGO} alt="MeetSaver" style={{ mixBlendMode: 'screen' }} />
+          <span className="nav-brand">MeetSaver</span>
+        </a>
+
+        <a className="nav-cta" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" target="_blank" rel="noopener noreferrer">
+          <img src={CHROME_ICON} alt="" />
+          <span className="nav-cta-text">Add to Chrome - Free</span>
+        </a>
+      </div>
 
       <div className="nav-links">
         <a href="#how">How it works</a>
@@ -15,11 +22,6 @@ export default function Navbar() {
         <a href="#privacy">Privacy</a>
         <a href="#faq">FAQ</a>
       </div>
-
-      <a className="nav-cta" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" target="_blank" rel="noopener noreferrer">
-        <img src={CHROME_ICON} alt="" />
-        Add to Chrome - Free
-      </a>
     </nav>
   )
 }

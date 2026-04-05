@@ -213,6 +213,11 @@ nav:hover {
   background: rgba(99, 160, 255, 0.08);
 }
 
+/* nav-row1 is only a structural wrapper; transparent on desktop */
+.nav-row1 {
+  display: contents;
+}
+
 .nav-cta {
   display: flex;
   align-items: center;
@@ -1948,5 +1953,421 @@ nav:hover {
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* ══════════════════════════════════════════════
+   MOBILE RESPONSIVE — clean rewrite v3
+   No hamburger. Nav: logo+CTA row, links row below.
+   ══════════════════════════════════════════════ */
+
+/* ── Prevent ANY horizontal overflow at root level ── */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* ── Tablet (≤ 900px) ── */
+@media (max-width: 900px) {
+  .wrap {
+    padding: 0 32px;
+    max-width: 100%;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 56px;
+    padding: 80px 32px 80px;
+    max-width: 100%;
+  }
+
+  .hero-popup-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .popup {
+    width: 100%;
+    max-width: 430px;
+  }
+
+  .popup-glow {
+    width: 100%;
+    max-width: 320px;
+    height: 400px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .feat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fcard.wide {
+    grid-column: 1;
+    padding: 36px;
+    gap: 22px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .priv-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .priv-left .sec-hd {
+    text-align: center;
+  }
+
+  .priv-left .sec-hd .sec-p {
+    margin: 0 auto;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Mobile (≤ 640px) ── */
+@media (max-width: 640px) {
+
+  /* ─ OVERFLOW GUARD — clip anything that bleeds right ─ */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* But don't constrain things that need to be bigger than their parent via position */
+  .bg-mesh,
+  .bg-grid,
+  .float-msgs,
+  .popup-glow,
+  .sec-features::after,
+  .cta-sec::before,
+  .sec-how::before,
+  .sec-features::before,
+  .sec-privacy::before,
+  .sec-faq::before,
+  .step::after,
+  .fcard::before {
+    max-width: none;
+  }
+
+  /* ─ NAV: full-width bar, two rows, no hamburger ─ */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none !important;
+    width: 100% !important;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    padding: 10px 16px 8px;
+    gap: 4px;
+    white-space: normal;
+  }
+
+  /* Row 1: logo left, CTA right */
+  .nav-row1 {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-logo {
+    flex-shrink: 0;
+    margin-right: 0;
+  }
+
+  .nav-brand {
+    font-size: 14px;
+  }
+
+  .nav-cta {
+    font-size: 12px;
+    padding: 7px 14px;
+    gap: 6px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    max-width: none;
+  }
+
+  .nav-cta img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Row 2: links scroll horizontally, NO hamburger */
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 0;
+    max-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    max-width: none;
+  }
+
+  /* ─ HERO ─ */
+  .hero-wrap {
+    padding-top: 0;
+    overflow: hidden;
+  }
+
+  .hero-inner {
+    padding: 110px 20px 60px;
+    gap: 44px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero-h1 {
+    font-size: clamp(32px, 9vw, 48px);
+  }
+
+  .hero-p {
+    font-size: 16px;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .btn-main,
+  .btn-out {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .btn-main {
+    font-size: 15px;
+    padding: 14px 24px;
+  }
+
+  .btn-out {
+    font-size: 14px;
+    padding: 14px 24px;
+  }
+
+  .btn-main img {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    max-width: none;
+  }
+
+  .hero-trust {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* ─ POPUP — constrain to viewport ─ */
+  .hero-popup-col {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .popup-glow {
+    display: none;
+  }
+
+  .popup {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 14px;
+  }
+
+  /* ─ LAYOUT ─ */
+  .wrap {
+    padding: 0 20px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .section {
+    padding: 80px 0;
+    overflow: hidden;
+  }
+
+  /* ─ SECTIONS ─ */
+  .sec-h2 {
+    font-size: clamp(26px, 7vw, 38px);
+  }
+
+  .sec-p {
+    font-size: 15px;
+  }
+
+  .sec-hd {
+    margin-bottom: 40px;
+  }
+
+  /* ─ STEPS ─ */
+  .step {
+    padding: 32px 24px;
+  }
+
+  /* ─ FEATURE CARDS ─ */
+  .fcard {
+    padding: 24px 22px;
+    gap: 16px;
+  }
+
+  .fcard.wide {
+    padding: 28px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fcard-ico {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    max-width: none;
+  }
+
+  .fcard-title {
+    font-size: 16px;
+  }
+
+  /* ─ PRIVACY ─ */
+  .priv-right {
+    padding: 28px 24px;
+  }
+
+  .pstat-n {
+    font-size: 44px;
+  }
+
+  /* ─ FAQ ─ */
+  .faq-q {
+    padding: 20px 22px;
+    font-size: 15px;
+  }
+
+  .faq-a {
+    padding: 0 22px 20px;
+    font-size: 14px;
+  }
+
+  /* ─ CTA ─ */
+  .cta-sec {
+    padding: 90px 0 100px;
+    overflow: hidden;
+  }
+
+  .cta-h2 {
+    font-size: clamp(30px, 8vw, 50px);
+  }
+
+  .cta-p {
+    font-size: 16px;
+  }
+
+  .cta-btns {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .cta-btns .btn-main,
+  .cta-btns .btn-out {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* ─ FOOTER ─ */
+  .footer {
+    padding: 48px 20px 28px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-brand {
+    grid-column: 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .footer-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .footer-badges span {
+    margin-left: 0;
+  }
+}
+
+/* ── Very small (≤ 380px) ── */
+@media (max-width: 380px) {
+  nav {
+    padding: 8px 12px 6px;
+  }
+
+  .nav-brand {
+    font-size: 13px;
+  }
+
+  .nav-cta {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .nav-cta-text {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .hero-h1 {
+    font-size: 30px;
   }
 }
