@@ -10,7 +10,13 @@ export default function Navbar() {
           <span className="nav-brand">MeetSaver</span>
         </a>
 
-        <a className="nav-cta" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" target="_blank" rel="noopener noreferrer">
+        <a className="nav-cta" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" target="_blank" rel="noopener noreferrer" onClick={() => {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "add_to_chrome_click",
+            location: "navbar"
+          });
+        }}>
           <img src={CHROME_ICON} alt="" />
           <span className="nav-cta-text">Add to Chrome - Free</span>
         </a>

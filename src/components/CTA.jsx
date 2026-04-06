@@ -20,7 +20,13 @@ export default function CTA() {
         </p>
 
         <div className="cta-btns" ref={btnsRef}>
-          <a className="btn-main" href="#">
+          <a className="btn-main" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" onClick={() => {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: "add_to_chrome_click",
+              location: "navbar"
+            });
+          }}>
             <img src={CHROME_ICON} alt="" style={{ width: 48, height: 48, borderRadius: 5, objectFit: 'cover' }} />
             Add to Chrome
           </a>

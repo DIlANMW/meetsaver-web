@@ -23,7 +23,13 @@ export default function Hero() {
           </p>
 
           <div className="hero-btns">
-            <a className="btn-main" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" target="_blank" rel="noopener noreferrer">
+            <a className="btn-main" href="https://chromewebstore.google.com/detail/keoflebbbfemdfgggclhimpfcnnckpmk?utm_source=item-share-cbt&utm_medium=web" target="_blank" rel="noopener noreferrer" onClick={() => {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: "add_to_chrome_click",
+                location: "hero"
+              });
+            }}>
               <img src={CHROME_ICON} alt="Download MeetSaver Chrome extension" />
               Add to Chrome - It's Free
             </a>
