@@ -7,10 +7,11 @@ import Privacy from './components/Privacy.jsx'
 import FAQ from './components/FAQ.jsx'
 import CTA from './components/CTA.jsx'
 import Footer from './components/Footer.jsx'
+import SEOSections from './components/SEOSections.jsx'
 
 export default function App() {
   return (
-    <> 
+    <>
       <div className="bg-mesh" />
       <div className="bg-grid" />
 
@@ -18,6 +19,7 @@ export default function App() {
 
       <main>
         <Hero />
+        <SEOSections />
         <HowItWorks />
         <Features />
         <Privacy />

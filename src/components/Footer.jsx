@@ -20,23 +20,21 @@ export default function Footer() {
 
         <div className="footer-col">
           <div className="footer-title">Product</div>
-          <a href="#">Features</a>
-          <a href="#">How it Works</a>
+          <a href="#how">How it Works</a>
           <a href="#">Download Extension</a>
+          <a href="#features">Features</a>
         </div>
 
         <div className="footer-col">
           <div className="footer-title">Resources</div>
-          <a href="#">FAQ</a>
-          <a href="#">Support</a>
-          <a href="#">Contact</a>
+          <a href="#faq">FAQ</a>
+          <a href="#support">Support</a>
         </div>
 
 
         <div className="footer-col">
           <div className="footer-title">Legal</div>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#privacy">Privacy</a>
         </div>
 
       </div>

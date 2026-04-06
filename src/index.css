@@ -2492,3 +2492,213 @@ body {
     font-size: 30px;
   }
 }
+
+/* ── SEO SECTION (Problem / Solution / Use Cases) ── */
+.sec-seo {
+  padding: 110px 0;
+  position: relative;
+  background:
+    radial-gradient(ellipse 80vw 60vh at 10% 30%,
+      rgba(59, 130, 246, 0.08) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 60vw 50vh at 90% 70%,
+      rgba(139, 92, 246, 0.07) 0%,
+      transparent 55%),
+    #060c14;
+}
+
+/* subtle top border glow (like other sections) */
+.sec-seo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(59, 130, 246, 0.25),
+      rgba(139, 92, 246, 0.2),
+      transparent);
+}
+
+/* ── Modern Feature Card Upgrade ── */
+.fcard-modern {
+  display: flex;
+  gap: 20px;
+  padding: 32px;
+  border-radius: 18px;
+  background: linear-gradient(135deg,
+      rgba(18, 28, 60, 0.85),
+      rgba(10, 16, 40, 0.95));
+  border: 1px solid rgba(99, 160, 255, 0.12);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow hover */
+.fcard-modern:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(99, 102, 241, 0.12);
+}
+
+/* icon */
+.fcard-modern-ico {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: linear-gradient(135deg,
+      rgba(99, 102, 241, 0.2),
+      rgba(59, 130, 246, 0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+/* label */
+.fcard-label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #60a5fa;
+  margin-bottom: 6px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* title */
+.fcard-title-modern {
+  font-size: 18px;
+  font-weight: 700;
+  color: #eef4ff;
+  margin-bottom: 6px;
+}
+
+/* subtitle */
+.fcard-sub {
+  font-size: 14px;
+  color: #a5b4fc;
+  margin-bottom: 8px;
+}
+
+/* description */
+.fcard-desc-modern {
+  font-size: 14px;
+  color: #8ba4cc;
+  line-height: 1.6;
+}
+
+.seo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.fcard-highlight {
+  transform: scale(1.05);
+  z-index: 2;
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(99, 102, 241, 0.25);
+}
+
+.fcard-modern::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(120deg, rgba(99, 102, 241, 0.3), transparent);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  opacity: 0.4;
+}
+
+.fcard-modern-ico {
+  background: radial-gradient(circle at 30% 30%, #3b82f6, #1e293b);
+  box-shadow:
+    0 0 20px rgba(59, 130, 246, 0.4),
+    inset 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s;
+}
+
+.fcard-modern:hover {
+  transform: translateY(-6px) scale(1.01);
+}
+
+.fcard-modern:hover .fcard-modern-ico {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.fcard-modern:hover {
+  transform: translateY(-6px) scale(1.01);
+}
+
+.fcard-modern:hover .fcard-modern-ico {
+  transform: scale(1.1) rotate(5deg);
+}
+
+@media (max-width: 640px) {
+  .fcard-highlight {
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .fcard-modern {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .fcard-title-modern {
+    font-size: 17px;
+  }
+
+  .fcard-desc-modern {
+    font-size: 14px;
+  }
+
+  .fcard-modern-ico {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+}
+
+/* ===== FIX: SEO cards responsive ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .seo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .seo-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  /* prevent squeezed layout */
+  .fcard-modern {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* fix broken text */
+  .fcard-title-modern,
+  .fcard-desc-modern {
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+}
