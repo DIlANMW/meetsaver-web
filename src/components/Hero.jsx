@@ -70,7 +70,7 @@ export default function Hero() {
                   <div className="current-card-inner">
                     <span className="live-dot" />
                     <div>
-                      <div className="current-name">Q2 Product Sync</div>
+                      <div className="current-name">Team Discussion</div>
                       <div className="current-meta">Started 14 minutes ago</div>
                     </div>
                   </div>
