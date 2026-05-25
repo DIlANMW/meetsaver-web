@@ -14,8 +14,8 @@ const PILLS = [
   },
   {
     ico: '👁️',
-    title: 'Zero Tracking',
-    desc: 'We collect zero analytics, zero usage data. MeetSaver is invisible to us once installed.',
+    title: 'Privacy-first design',
+    desc: 'Minimal data processing, no personal data retention.',
   },
 ]
 
@@ -41,11 +41,11 @@ function StatBox() {
   return (
     <div className="priv-right" ref={boxRef}>
       <div className="pstat">
-        <span className="pstat-n" ref={count1Ref}>0</span>
-        <div className="pstat-l">Bytes sent to any server</div>
-      </div>
-      <div className="pstat">
         <span className="pstat-n" ref={count2Ref}>0</span>
+        <div className="pstat-l">Configuration needed</div>
+      </div>
+       <div className="pstat">
+        <span className="pstat-n" ref={count1Ref}>0</span>
         <div className="pstat-l">Accounts or sign-ups required</div>
       </div>
       <div className="pstat">

@@ -8,6 +8,7 @@ import FAQ from './components/FAQ.jsx'
 import CTA from './components/CTA.jsx'
 import Footer from './components/Footer.jsx'
 import SEOSections from './components/SEOSections.jsx'
+import ManualTasks from './components/ManualTasks.jsx'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Hero />
         <SEOSections />
         <HowItWorks />
+        <ManualTasks />
         <Features />
         <Privacy />
         <FAQ />
