@@ -25,7 +25,7 @@ export default function HowToSaveGoogleMeetChatHistory() {
           </div>
           <h1 className="blog-h1">How to Save Google Meet Chat History (Complete Guide)</h1>
           <p className="blog-lead">
-            Google Meet doesn't save your chat messages after the meeting ends. Here's every method available — and the one that actually works automatically.
+            Google Meet doesn't save your chat messages after the meeting ends. Here's every method available, and the one that actually works automatically.
           </p>
         </header>
 
@@ -46,7 +46,7 @@ export default function HowToSaveGoogleMeetChatHistory() {
           <section id="problem">
             <h2>Why Google Meet Chat Disappears After Meetings</h2>
             <p>
-              If you've ever frantically scrolled through a Google Meet chat to grab a link or note a decision — only to find the chat window closed and everything gone — you're not alone. This is one of the most common frustrations for Google Meet users.
+              If you've ever frantically scrolled through a Google Meet chat to grab a link or note a decision, only to find the chat window closed and everything gone, you're not alone. This is one of the most common frustrations for Google Meet users.
             </p>
             <p>
               By default, <strong>Google Meet does not save chat messages</strong> once a meeting ends. The chat is only visible while the meeting is active. The moment you leave or the host ends the call, the entire chat thread vanishes. No history. No export button. Nothing.
@@ -62,7 +62,7 @@ export default function HowToSaveGoogleMeetChatHistory() {
               <li>Contact details exchanged</li>
             </ul>
             <p>
-              The problem is especially painful in long meetings with many participants. A lot of important information lives in the chat — and right now, all of it disappears by default.
+              The problem is especially painful in long meetings with many participants. A lot of important information lives in the chat, and right now all of it disappears by default.
             </p>
           </section>
 
@@ -91,7 +91,7 @@ export default function HowToSaveGoogleMeetChatHistory() {
           <section id="automatic">
             <h2>Method 1: Save Google Meet Chat Automatically (Recommended)</h2>
             <p>
-              The easiest and most reliable way to save Google Meet chat history is to use <strong>MeetSaver</strong> — a free Chrome extension that captures every chat message in real time, without any clicks or manual effort.
+              The easiest and most reliable way to save Google Meet chat history is to use <strong>MeetSaver</strong>, a free Chrome extension that captures every chat message in real time, without any clicks or manual effort.
             </p>
 
             <h3>How MeetSaver works</h3>
@@ -111,20 +111,20 @@ export default function HowToSaveGoogleMeetChatHistory() {
               <li>Click the button below to open the Chrome Web Store listing</li>
               <li>Click <strong>Add to Chrome</strong></li>
               <li>Confirm the installation prompt</li>
-              <li>That's it — join your next Google Meet and MeetSaver handles everything</li>
+              <li>That's it. Join your next Google Meet and MeetSaver handles everything.</li>
             </ol>
             <p>No account required. No sign-up. Nothing to configure.</p>
 
             <div className="blog-cta-box">
               <div className="blog-cta-text">
-                <strong>MeetSaver</strong> — Free Chrome extension that saves every Google Meet chat automatically
+                <strong>MeetSaver</strong>: Free Chrome extension that saves every Google Meet chat automatically
               </div>
               <a className="btn-main blog-cta-btn" href={CHROME_URL} target="_blank" rel="noopener noreferrer" onClick={() => {
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({ event: 'add_to_chrome_click', location: 'blog_how_to_save' });
               }}>
                 <img src={CHROME_ICON} alt="" />
-                Add to Chrome — It's Free
+                Add to Chrome, It's Free
               </a>
             </div>
           </section>
@@ -151,10 +151,10 @@ export default function HowToSaveGoogleMeetChatHistory() {
               Manual copy-paste has serious limitations:
             </p>
             <ul>
-              <li><strong>You have to remember</strong> — it's easy to leave a meeting without saving</li>
-              <li><strong>Timing is critical</strong> — once the host ends the meeting, the chat disappears instantly</li>
-              <li><strong>No structure</strong> — you get a raw wall of text with no link extraction or formatting</li>
-              <li><strong>Partial saves</strong> — if the chat is long, "Select All" may not capture everything</li>
+              <li><strong>You have to remember:</strong> it's easy to leave a meeting without saving</li>
+              <li><strong>Timing is critical:</strong> once the host ends the meeting, the chat disappears instantly</li>
+              <li><strong>No structure:</strong> you get a raw wall of text with no link extraction or formatting</li>
+              <li><strong>Partial saves:</strong> if the chat is long, "Select All" may not capture everything</li>
             </ul>
             <p>
               For important meetings, relying on manual copy-paste is risky. The automatic method above is far more reliable.
@@ -164,7 +164,7 @@ export default function HowToSaveGoogleMeetChatHistory() {
           <section id="workspace">
             <h2>Method 3: Google Workspace Chat Logging (Business Accounts)</h2>
             <p>
-              Google Workspace (business) accounts have access to a feature that can save Google Meet chats to Google Chat — but it comes with significant limitations.
+              Google Workspace (business) accounts have access to a feature that can save Google Meet chats to Google Chat, but it comes with significant limitations.
             </p>
 
             <h3>Requirements</h3>
@@ -180,11 +180,11 @@ export default function HowToSaveGoogleMeetChatHistory() {
               <li>Messages are saved to <strong>Google Chat spaces</strong>, not as an exportable file</li>
               <li>External participants' messages may not be captured</li>
               <li>Not available on personal Gmail accounts</li>
-              <li>Requires admin configuration — not something individual users can control</li>
+              <li>Requires admin configuration, not something individual users can control</li>
               <li>The retention and format are determined by your organization's settings</li>
             </ul>
             <p>
-              Even if you're on a Workspace account, <strong>the Chrome extension method is simpler</strong> and gives you more control — including the ability to export transcripts as files.
+              Even if you're on a Workspace account, <strong>the Chrome extension method is simpler</strong> and gives you more control, including the ability to export transcripts as files.
             </p>
           </section>
 
@@ -194,7 +194,7 @@ export default function HowToSaveGoogleMeetChatHistory() {
             <div className="blog-faq">
               <div className="blog-faq-item">
                 <h3>Can you save Google Meet chat after the meeting ends?</h3>
-                <p>No — once a Google Meet ends, the chat is gone. You must save the chat <em>during</em> the meeting, either manually or using an extension like MeetSaver that captures it automatically in real time.</p>
+                <p>No. Once a Google Meet ends, the chat is gone. You must save the chat <em>during</em> the meeting, either manually or using an extension like MeetSaver that captures it automatically in real time.</p>
               </div>
               <div className="blog-faq-item">
                 <h3>Is there a free way to save Google Meet chat?</h3>

@@ -7,7 +7,7 @@ const POSTS = [
     slug: 'how-to-save-google-meet-chat-history',
     tag: 'Guide',
     title: 'How to Save Google Meet Chat History',
-    desc: 'Every method available — and the one that actually works automatically, even if you forget.',
+    desc: 'Every method available, and the one that actually works automatically, even if you forget.',
     read: '5 min',
   },
   {

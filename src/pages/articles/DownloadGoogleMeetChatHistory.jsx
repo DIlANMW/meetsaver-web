@@ -25,7 +25,7 @@ export default function DownloadGoogleMeetChatHistory() {
           </div>
           <h1 className="blog-h1">How to Download Google Meet Chat History</h1>
           <p className="blog-lead">
-            Google Meet has no built-in download button for chat. Here's exactly how to get your chat history saved as a file — step by step.
+            Google Meet has no built-in download button for chat. Here's exactly how to get your chat history saved as a file, step by step.
           </p>
         </header>
 
@@ -45,7 +45,7 @@ export default function DownloadGoogleMeetChatHistory() {
           <section id="can-you">
             <h2>Can You Download Google Meet Chat History?</h2>
             <p>
-              Yes — but not through Google Meet itself. <strong>Google Meet has no built-in option to download, export, or save chat history</strong> as a file. There is no "Export chat" or "Save transcript" button anywhere in the interface.
+              Yes, but not through Google Meet itself. <strong>Google Meet has no built-in option to download, export, or save chat history</strong> as a file. There is no "Export chat" or "Save transcript" button anywhere in the interface.
             </p>
             <p>
               This means that to download your Google Meet chat, you need to either:
@@ -55,7 +55,7 @@ export default function DownloadGoogleMeetChatHistory() {
               <li>Manually copy the chat during the meeting and paste it into a document</li>
             </ol>
             <p>
-              Option 1 is automatic and works even if you forget. Option 2 requires you to act before the meeting ends — once it's closed, the chat is gone permanently.
+              Option 1 is automatic and works even if you forget. Option 2 requires you to act before the meeting ends. Once it's closed, the chat is gone permanently.
             </p>
           </section>
 
@@ -69,30 +69,30 @@ export default function DownloadGoogleMeetChatHistory() {
             <ol>
               <li>Click the button below to open the Chrome Web Store listing</li>
               <li>Click <strong>Add to Chrome</strong></li>
-              <li>Confirm when prompted — the extension installs in seconds</li>
+              <li>Confirm when prompted. The extension installs in seconds.</li>
             </ol>
             <div className="blog-cta-box">
               <div className="blog-cta-text">
-                <strong>MeetSaver</strong> — The easiest way to download Google Meet chat history, free
+                <strong>MeetSaver</strong>: The easiest way to download Google Meet chat history, free
               </div>
               <a className="btn-main blog-cta-btn" href={CHROME_URL} target="_blank" rel="noopener noreferrer" onClick={() => {
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({ event: 'add_to_chrome_click', location: 'blog_download' });
               }}>
                 <img src={CHROME_ICON} alt="" />
-                Add to Chrome — It's Free
+                Add to Chrome, It's Free
               </a>
             </div>
 
             <h3>Step 2: Join your Google Meet as normal</h3>
             <p>
-              No setup needed. MeetSaver detects your meeting automatically and begins capturing chat messages the moment they appear. You don't need to click anything or configure it — just join your meeting and have the conversation.
+              No setup needed. MeetSaver detects your meeting automatically and begins capturing chat messages the moment they appear. You don't need to click anything or configure it. Just join your meeting and have the conversation.
             </p>
 
             <h3>Step 3: Download the chat after the meeting</h3>
             <ol>
               <li>Click the MeetSaver icon in your Chrome toolbar (top-right of browser)</li>
-              <li>Find the meeting you just had — it will be listed with the date and time</li>
+              <li>Find the meeting you just had. It will be listed with the date and time.</li>
               <li>Click <strong>Open</strong> to view the full transcript</li>
               <li>Click <strong>Export</strong> to download it as a <code>.txt</code> file</li>
             </ol>
@@ -112,7 +112,7 @@ export default function DownloadGoogleMeetChatHistory() {
           <section id="manual">
             <h2>Manual Method: Copy-Paste (No Extension)</h2>
             <p>
-              If you prefer not to install an extension, you can manually save the chat — but you must do this <em>before</em> the meeting ends.
+              If you prefer not to install an extension, you can manually save the chat. You must do this <em>before</em> the meeting ends.
             </p>
 
             <h3>Steps</h3>
@@ -132,7 +132,7 @@ export default function DownloadGoogleMeetChatHistory() {
 
             <h3>Limitations of the manual method</h3>
             <ul>
-              <li>Easy to forget — especially in back-to-back meetings</li>
+              <li>Easy to forget, especially in back-to-back meetings</li>
               <li>No automatic link extraction or action item detection</li>
               <li>The text is unformatted and harder to read</li>
               <li>"Select All" doesn't always grab messages at the very top of long chats</li>
@@ -155,13 +155,13 @@ export default function DownloadGoogleMeetChatHistory() {
 
             <h3>Why it's not practical for most users</h3>
             <ul>
-              <li>Requires admin configuration — individual users can't control it</li>
+              <li>Requires admin configuration. Individual users can't control it.</li>
               <li>Google Vault is an enterprise compliance tool, not a simple download button</li>
               <li>The chat is stored in Google Chat, not as a downloadable file</li>
               <li>One-time meeting links often don't have persistent chat</li>
             </ul>
             <p>
-              For most Workspace users, <strong>MeetSaver is still the simplest way to get a downloadable chat transcript</strong> — and it works regardless of your org's admin settings.
+              For most Workspace users, <strong>MeetSaver is still the simplest way to get a downloadable chat transcript</strong>, and it works regardless of your org's admin settings.
             </p>
           </section>
 
@@ -171,11 +171,11 @@ export default function DownloadGoogleMeetChatHistory() {
               Even with the right tools, good habits make your records more useful:
             </p>
             <ul>
-              <li><strong>Paste links in chat</strong> — instead of just mentioning them verbally, paste URLs in the chat panel so they're captured with full context</li>
-              <li><strong>Summarize decisions in chat</strong> — when your team agrees on something, type it in the chat: "Agreed: we're going with Option B." This makes the transcript more useful later.</li>
-              <li><strong>Use action item format</strong> — MeetSaver automatically detects action items, so writing "Action: @Name will do X by Friday" makes them easy to find</li>
-              <li><strong>Export immediately after</strong> — the transcript is always available in MeetSaver, but exporting right after keeps your workflow clean</li>
-              <li><strong>Share the transcript</strong> — paste the .txt export into your project management tool or team Slack/chat so everyone has access</li>
+              <li><strong>Paste links in chat:</strong> instead of just mentioning them verbally, paste URLs in the chat panel so they're captured with full context</li>
+              <li><strong>Summarize decisions in chat:</strong> when your team agrees on something, type it in the chat: "Agreed: we're going with Option B." This makes the transcript more useful later.</li>
+              <li><strong>Use action item format:</strong> MeetSaver automatically detects action items, so writing "Action: @Name will do X by Friday" makes them easy to find</li>
+              <li><strong>Export immediately after:</strong> the transcript is always available in MeetSaver, but exporting right after keeps your workflow clean</li>
+              <li><strong>Share the transcript:</strong> paste the .txt export into your project management tool or team chat so everyone has access</li>
             </ul>
           </section>
 

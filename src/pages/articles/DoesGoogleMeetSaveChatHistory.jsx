@@ -25,7 +25,7 @@ export default function DoesGoogleMeetSaveChatHistory() {
           </div>
           <h1 className="blog-h1">Does Google Meet Save Chat History Automatically?</h1>
           <p className="blog-lead">
-            The short answer: no — for most users, Google Meet does not save chat history. Here's the full story, what Google actually does with your chats, and how to make sure nothing gets lost.
+            The short answer: no. For most users, Google Meet does not save chat history. Here's the full story, what Google actually does with your chats, and how to make sure nothing gets lost.
           </p>
         </header>
 
@@ -48,7 +48,7 @@ export default function DoesGoogleMeetSaveChatHistory() {
               <strong>For most users: No.</strong> Google Meet chat messages disappear when the meeting ends. There is no automatic chat history saved to your Google account for personal Gmail users.
             </div>
             <p>
-              This surprises a lot of people because Google Chat (a separate product) does save conversation history. But Google Meet's in-meeting chat is different — it's a temporary, session-based feature that doesn't persist after the meeting closes.
+              This surprises a lot of people because Google Chat (a separate product) does save conversation history. But Google Meet's in-meeting chat is different. It's a temporary, session-based feature that doesn't persist after the meeting closes.
             </p>
           </section>
 
@@ -61,7 +61,7 @@ export default function DoesGoogleMeetSaveChatHistory() {
             <ul>
               <li>Chat is visible during the meeting in the side panel</li>
               <li>When the meeting ends (or you leave), the chat window closes</li>
-              <li>The messages are permanently gone — not stored in Gmail, Google Drive, or anywhere else</li>
+              <li>The messages are permanently gone, not stored in Gmail, Google Drive, or anywhere else</li>
               <li>There is no "Download chat" button in Google Meet for personal accounts</li>
             </ul>
             <p>
@@ -72,7 +72,7 @@ export default function DoesGoogleMeetSaveChatHistory() {
           <section id="workspace">
             <h2>Google Workspace Accounts: Partially, With Conditions</h2>
             <p>
-              If you use Google Meet through a <strong>Google Workspace</strong> (business or education) account, there is a feature that can save chats — but it's far more limited than most people expect.
+              If you use Google Meet through a <strong>Google Workspace</strong> (business or education) account, there is a feature that can save chats, but it's far more limited than most people expect.
             </p>
 
             <h3>When Workspace does save chats</h3>
@@ -92,7 +92,7 @@ export default function DoesGoogleMeetSaveChatHistory() {
 
             <h3>Where chats are saved in Workspace</h3>
             <p>
-              When the feature is active, messages go to <strong>Google Chat spaces</strong> — not to your email, Drive, or a downloadable file. You'd need to navigate to Google Chat and find the space linked to that meeting, which is often harder than it sounds.
+              When the feature is active, messages go to <strong>Google Chat spaces</strong>, not to your email, Drive, or a downloadable file. You'd need to navigate to Google Chat and find the space linked to that meeting, which is often harder than it sounds.
             </p>
 
             <div className="blog-callout">
@@ -103,7 +103,7 @@ export default function DoesGoogleMeetSaveChatHistory() {
           <section id="recording">
             <h2>Does Recording a Google Meet Save the Chat?</h2>
             <p>
-              <strong>No — recording does not capture chat messages.</strong> This is a common misconception.
+              <strong>No. Recording does not capture chat messages.</strong> This is a common misconception.
             </p>
             <p>
               When you record a Google Meet (available on Workspace plans), the recording captures:
@@ -132,7 +132,7 @@ export default function DoesGoogleMeetSaveChatHistory() {
               Since Google doesn't reliably save chat history for most users, the practical solution is to use a tool that does it for you.
             </p>
             <p>
-              <strong>MeetSaver</strong> is a free Chrome extension that automatically saves every chat message during your Google Meet — regardless of whether you're on a personal or Workspace account, and regardless of your admin settings. It works by capturing messages as they appear in real time, storing them locally in your browser, and letting you export them as a file afterward.
+              <strong>MeetSaver</strong> is a free Chrome extension that automatically saves every chat message during your Google Meet, regardless of whether you're on a personal or Workspace account, and regardless of your admin settings. It works by capturing messages as they appear in real time, storing them locally in your browser, and letting you export them as a file afterward.
             </p>
 
             <h3>What MeetSaver captures</h3>
@@ -145,22 +145,22 @@ export default function DoesGoogleMeetSaveChatHistory() {
 
             <h3>What makes it different from Google's approach</h3>
             <ul>
-              <li><strong>Works for everyone</strong> — no Workspace plan required</li>
-              <li><strong>Fully automatic</strong> — no clicking, no remembering</li>
-              <li><strong>Local and private</strong> — data never leaves your device</li>
-              <li><strong>Exportable</strong> — download the chat as a file anytime</li>
+              <li><strong>Works for everyone</strong>, no Workspace plan required</li>
+              <li><strong>Fully automatic</strong>, no clicking or remembering</li>
+              <li><strong>Local and private</strong>, data never leaves your device</li>
+              <li><strong>Exportable</strong>, download the chat as a file anytime</li>
             </ul>
 
             <div className="blog-cta-box">
               <div className="blog-cta-text">
-                Stop relying on Google to save your chats. <strong>MeetSaver</strong> does it automatically — free, with no account needed.
+                Stop relying on Google to save your chats. <strong>MeetSaver</strong> does it automatically, free, with no account needed.
               </div>
               <a className="btn-main blog-cta-btn" href={CHROME_URL} target="_blank" rel="noopener noreferrer" onClick={() => {
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({ event: 'add_to_chrome_click', location: 'blog_does_save' });
               }}>
                 <img src={CHROME_ICON} alt="" />
-                Add to Chrome — It's Free
+                Add to Chrome, It's Free
               </a>
             </div>
           </section>

@@ -4,15 +4,15 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation.jsx'
 const FAQS = [
   {
     q: 'Does Google Meet save chat history automatically?',
-    a: 'Google Meet may save chat messages to Google Chat for some Google Workspace (business) users, but this is limited and not available to everyone. For most users, Google Meet chat messages disappear the moment the meeting ends. MeetSaver solves this — it automatically captures and stores every message locally during your meeting so you never lose anything.',
+    a: 'Google Meet may save chat messages to Google Chat for some Google Workspace (business) users, but this is limited and not available to everyone. For most users, Google Meet chat messages disappear the moment the meeting ends. MeetSaver solves this by automatically capturing and storing every message locally during your meeting so you never lose anything.',
   },
   {
     q: 'How do I save Google Meet chat history?',
-    a: 'The easiest way is to install the MeetSaver Chrome extension. Once installed, it automatically saves your Google Meet chat in real time — no clicking or setup required. After the meeting, open MeetSaver to view or export the full chat history.',
+    a: 'The easiest way is to install the MeetSaver Chrome extension. Once installed, it automatically saves your Google Meet chat in real time, no clicking or setup required. After the meeting, open MeetSaver to view or export the full chat history.',
   },
   {
     q: 'How do I download Google Meet chat history?',
-    a: 'With MeetSaver, open the extension after your meeting and click Export. This downloads the full transcript — including sender names and timestamps — as a .txt file. Without an extension, Google Meet does not offer a built-in way to download chat history.',
+    a: 'With MeetSaver, open the extension after your meeting and click Export. This downloads the full transcript, including sender names and timestamps, as a .txt file. Without an extension, Google Meet does not offer a built-in way to download chat history.',
   },
   {
     q: 'What is MeetSaver?',
@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: 'Who needs MeetSaver?',
-    a: "MeetSaver is ideal for anyone who uses Google Meet regularly and wants to make sure they don't lose important chat messages after a meeting ends — students, teams, and professionals alike.",
+    a: "MeetSaver is ideal for anyone who uses Google Meet regularly and wants to make sure they don't lose important chat messages after a meeting ends: students, teams, and professionals alike.",
   },
   {
     q: 'Do I need to click anything during the meeting?',
@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     q: 'Can I export my saved chats?',
-    a: 'Yes. From any saved meeting, click Export to download the full transcript as a .txt file — share it with your team or keep it for your records.',
+    a: 'Yes. From any saved meeting, click Export to download the full transcript as a .txt file. Share it with your team or keep it for your records.',
   },
   {
     q: 'Is MeetSaver free?',
