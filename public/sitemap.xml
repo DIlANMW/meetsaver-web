@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://www.meetsaver.com/</loc>
+    <loc>https://meetsaver.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <url>
+    <loc>https://meetsaver.com/blog/how-to-save-google-meet-chat-history</loc>
+  </url>
+
+  <url>
+    <loc>https://meetsaver.com/blog/does-google-meet-save-chat-history</loc>
+  </url>
+
+  <url>
+    <loc>https://meetsaver.com/blog/download-google-meet-chat-history</loc>
+  </url>
+
 </urlset>
