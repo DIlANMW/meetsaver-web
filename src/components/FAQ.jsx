@@ -3,24 +3,36 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation.jsx'
 
 const FAQS = [
   {
-    q: 'What is MeetSaver?',
-    a: "MeetSaver is a Chrome extension that automatically saves Google Meet chat messages. If you've ever lost important messages after a meeting ends, MeetSaver ensures you can download and store your chat history safely.",
+    q: 'Does Google Meet save chat history automatically?',
+    a: 'Google Meet may save chat messages to Google Chat for some Google Workspace (business) users, but this is limited and not available to everyone. For most users, Google Meet chat messages disappear the moment the meeting ends. MeetSaver solves this — it automatically captures and stores every message locally during your meeting so you never lose anything.',
   },
   {
-    q: 'Who Needs MeetSaver?',
-    a: "MeetSaver is ideal for anyone who uses Google Meet regularly and wants to ensure they don't lose important chat messages after a meeting ends.",
+    q: 'How do I save Google Meet chat history?',
+    a: 'The easiest way is to install the MeetSaver Chrome extension. Once installed, it automatically saves your Google Meet chat in real time — no clicking or setup required. After the meeting, open MeetSaver to view or export the full chat history.',
+  },
+  {
+    q: 'How do I download Google Meet chat history?',
+    a: 'With MeetSaver, open the extension after your meeting and click Export. This downloads the full transcript — including sender names and timestamps — as a .txt file. Without an extension, Google Meet does not offer a built-in way to download chat history.',
+  },
+  {
+    q: 'What is MeetSaver?',
+    a: "MeetSaver is a free Chrome extension that automatically saves Google Meet chat messages. If you've ever lost important messages after a meeting ends, MeetSaver ensures you can download and store your chat history safely.",
+  },
+  {
+    q: 'Who needs MeetSaver?',
+    a: "MeetSaver is ideal for anyone who uses Google Meet regularly and wants to make sure they don't lose important chat messages after a meeting ends — students, teams, and professionals alike.",
   },
   {
     q: 'Do I need to click anything during the meeting?',
-    a: 'No. MeetSaver detects your meeting automatically and captures every message without any interaction.',
+    a: 'No. MeetSaver detects your Google Meet session automatically and captures every message without any interaction from you.',
   },
   {
     q: 'Can I export my saved chats?',
-    a: 'Yes. From any saved meeting, click Export to download the full transcript as a .txt file.',
+    a: 'Yes. From any saved meeting, click Export to download the full transcript as a .txt file — share it with your team or keep it for your records.',
   },
   {
-    q: 'Does Google Meet save chat messages automatically?',
-    a: 'Google Meet may save chat messages to Google Chat for some Google Workspace (business) users. However, this feature is limited, not available to all users, and meeting participants often cannot access chats after the meeting ends. MeetSaver ensures all chat messages are captured and stored locally for anyone using Google Meet.',
+    q: 'Is MeetSaver free?',
+    a: 'Yes, MeetSaver is completely free. No account, no sign-up, no paid tier. Install it from the Chrome Web Store in under 10 seconds.',
   },
 ]
 
@@ -34,7 +46,7 @@ function FaqItem({ faq, defaultOpen = false, delay }) {
         {faq.q}
         <span className="faq-ic">+</span>
       </div>
-      {open && <div className="faq-a">{faq.a}</div>}
+      <div className="faq-a" hidden={!open} aria-hidden={!open}>{faq.a}</div>
     </div>
   )
 }
@@ -50,7 +62,7 @@ export default function FAQ() {
         <div className="sec-hd">
           <div className="sec-tag" ref={tagRef}>FAQ</div>
           <h2 className="sec-h2" ref={h2Ref}>Common questions.</h2>
-          <p className="sec-p" ref={pRef}>Everything you need to know before installing.</p>
+          <p className="sec-p" ref={pRef}>Everything you need to know about saving Google Meet chat history.</p>
         </div>
 
         <div className="faq-list">

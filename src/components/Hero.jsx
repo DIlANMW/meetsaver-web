@@ -46,7 +46,7 @@ export default function Hero() {
             <div className="htrust">⚡ Zero setup</div>
           </div>
           <p className="hero-seo-hidden">
-            Looking for a way to save Google Meet chat history? MeetSaver automatically captures and stores all messages during your meetings.
+            Looking for a way to save Google Meet chat history? MeetSaver automatically captures and stores all messages during your meetings. Whether you want to download Google Meet chat history, export meet save transcripts, or simply prevent chats from disappearing after the meeting ends — MeetSaver does it all, for free.
           </p>
         </div>
 
